@@ -13,33 +13,30 @@
 </head>
 <body>
 	<span id="main">
-		<div class="container">
-			<div id = "first" >
+	    <div class="container">
+	       <div id = "first" >
 	          <h2><strong> welcome to the Pig dice game</strong></h2>
 	          <h3><em> Don't be a greedy little pig......</em></h3>
 	          <button type="button" id="next" name="play" onclick="begin()"> Play Game! </button>
 	          <button type ="button" id="rules" onclick="rule()"> How to play</button>
-        </span>
-      </div>
-			<div id="game">
-				<div class="grid-containter">
-           			 <div class="col-sm-6">
-			              <h2 class="player-name" id="name-0">Player 1</h2>
-			              <input type="" id="score1" disabled="">
-            		</div>
-           		    <div class="col-sm-6">
-			              <h2 class="player-name" id="name-1">Player 2</h2>
-			               <input type="" id="score1" disabled="">
-            		</div>
-
-
-
-			</div>
-
-
-
-
-		</div>
+	</span>
+	        </div>
+	      	<div id="game">
+		        <div class="grid-containter">
+		            <div class="col-sm-6">
+		              <h2 class="player-name" id="name-0">Player 1</h2>
+		              <input type="" id="score1" disabled="">
+		            </div>
+		            <div class="col-sm-6">
+		               <h2 class="player-name" id="name-1">Player 2</h2>
+		               <input type="" id="score1" disabled="">
+		            </div>
+		               <button type="button" id="play" onclick="roll()"> ROLL </button>
+		                <textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
+						 <button type="button" id="reset" name="reset" onclick="newGame()"> Reset Game</button>
+		        </div>
+	        </div>
+	    </div>
 	<script src="jquery-3.3.1.js"></script>
 	<script src="roll.js"></script>
 </body>
