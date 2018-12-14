@@ -11,9 +11,7 @@ function begin() {
     } else {
         document.getElementById("name-0").innerHTML = " " + playerNum1;
         document.getElementById("name-1").innerHTML = " " + playerNum2;
-        //document.getElementById("action").innerHTML = " " + playerNum1;
-        //document.getElementById("scorerOne").innerHTML = " " + playerOneScore;
-        //document.getElementById("scorerTwo").innerHTML = " " + playerTwoScore;
+       
     }
 
 }
