@@ -39,7 +39,7 @@ function passOn(){
         scoreOne = scoreOne + score;
         document.getElementById("score1").value = " " + scoreOne;
         document.getElementById("message").value = "it's now " + playerNum2 + "'s turn" 
-        //document.getElementById("action").innerHTML = " " + playerNum1;
+       
             player = 1;
 
     }
@@ -49,19 +49,12 @@ function passOn(){
          scoreTwo = scoreTwo + score;   
         document.getElementById("score2").value = " " + scoreTwo;
         document.getElementById("message").value = "it's now " + playerNum1 + "'s turn" 
-        //document.getElementById("action").innerHTML = " " + playerNum2;
+       
             player = 0;
 
    }
 
 }
-
-}
-
-
-
-
-
 
 $(document).ready(function(){
     $("#game,#maze").hide();
