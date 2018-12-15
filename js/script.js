@@ -1,24 +1,40 @@
+var score = 0
+var number
+var playerNum1,
+    playerNum2,
+    scoreOne = 0;
+    scoreTwo = 0;
+    player = 0;
+    //currentPlayer = 0;
+
 function begin() {
 
-   
     playerNum1 = prompt("Player One, Enter Your Name:");
     playerNum2 = prompt("Player Two, Enter Your Name:");
 
+    
     if (playerNum1 == "" || playerNum2 == "" || playerNum1 == null || playerNum2 == null) {
         alert("Please Enter Your Names Players One and Two!");
         location.reload();
     } else {
         document.getElementById("name-0").innerHTML = " " + playerNum1;
         document.getElementById("name-1").innerHTML = " " + playerNum2;
-       
+        //document.getElementById("action").innerHTML = " " + playerNum1;
+        document.getElementById("score1").innerHTML = " " + playerOneScore;
+        document.getElementById("score2").innerHTML = " " + playerTwoScore;
     }
 
 }
-function dice (){
-  number = Math.ceil(Math.random() * 6);
+function dice(){
+ 
+  
+    number = Math.ceil(Math.random() * 6);
+
 }
 function roll() {
-   dice();
+    
+        
+        dice();
         if (number != 1){
             score = score + number;
             document.getElementById("result").value = '' + score;
@@ -33,13 +49,16 @@ function roll() {
         }
         event.preventDefault();
 }
+
 function passOn(){
-  if (player == 0){
+
+       
+    if (player == 0){
 
         scoreOne = scoreOne + score;
         document.getElementById("score1").value = " " + scoreOne;
         document.getElementById("message").value = "it's now " + playerNum2 + "'s turn" 
-       
+      
             player = 1;
 
     }
@@ -56,8 +75,9 @@ function passOn(){
 
 }
 
+
 $(document).ready(function(){
-    $("#game,#maze").hide();
+    $("#game, #maze").hide();
    
    })
    $(document).ready(function(){
@@ -66,7 +86,7 @@ $(document).ready(function(){
         $("#first") . hide();
    })
 })
-$(document).ready(function(){
+   $(document).ready(function(){
     $("#game, #maze").hide();
    
    })
@@ -76,7 +96,7 @@ $(document).ready(function(){
         $("#first") . hide();
    })
 })
-   $(document).ready(function(){
+    $(document).ready(function(){
     $("#game").hide();
    
    })
@@ -86,6 +106,3 @@ $(document).ready(function(){
         $("#game,#maze") . hide();
    })
 })
-
-
-
