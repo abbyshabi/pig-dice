@@ -42,6 +42,16 @@ $(document).ready(function(){
         $("#first") . hide();
    })
 })
+   $(document).ready(function(){
+    $("#game").hide();
+   
+   })
+   $(document).ready(function(){
+   $("#back").click(function(){
+     $("#first").show();
+        $("#game,#maze") . hide();
+   })
+})
 
 
 
