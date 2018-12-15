@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Pig-dice game </title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	 <link rel="stylesheet" href="css/bootstrap.css">
-	<div class="jumbotron">
+  <head>
+    <title>React Go Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type="text/css" href="new.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <div class="jumbotron">
       <h1><strong><em> Pig Dice</em></strong></h1>
-	</div>
-</head>
-<body>
-	<span id="main">
-	    <div class="container">
-	    	<div id="maze">
+    </div>
+  </head>
+  <body>
+    <span id="main">
+    <div class="container">
+      <div id="maze">
                 <h6> 
                   On a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during this turn are forfeited.<br> Rolling a 1 doesn't wipe out your entire score from previous turns, just the total earned during that particular roll.<br>
 
@@ -24,36 +22,41 @@
                                   </h6>
                 <button type="button" id="back"> Back to Game</button>
               </div>
-	       <div id = "first" >
-	          <h2><strong> welcome to the Pig dice game</strong></h2>
-	          <h3><em> Don't be a greedy little pig......</em></h3>
-	          <button type="button" id="next" name="play" onclick="begin()"> Play Game! </button>
-	          <button type ="button" id="rules" onclick="rule()"> How to play</button>
-	</span>
-	              <div id="game">
-        			<div class="grid-containter">
-			            <div class="col-sm-6">
-			             	 <h2 class="player-name" id="name-0">Player 1</h2>
-			              	 <input type="" id="score1" disabled="">
-			            </div>
-			            <div class="col-sm-6">
-				              <h2 class="player-name" id="name-1">Player 2</h2>
-				               <input type="" id="score2" disabled="">
-			            </div>
-			         
-			              <button type="button" id="play" onclick="roll()"> ROLL </button>
-			              	<textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
-			           		<textarea id="message" disabled="" rows="1" cols="45"> </textarea><br><br>
-				               <button type="button" id="play" onclick="passOn()"> Hold </button>
-				              <button type="button" id="reset" name="reset" onclick="newGame()"> Reset Game</button>
-				              <p id="action"></p>
-              		</div>
-      	</div>
+       <div id = "first" >
+          <h2><strong> welcome to the Pig dice game</strong></h2>
+          <h3><em> Don't be a greedy little pig......</em></h3>
+          <button type="button" id="next" name="play" onclick="begin()"> Play Game! </button>
+          <button type ="button" id="rules" onclick="rule()"> How to play</button>
+        </span>
+      </div>
+      <div id="game">
+        <div class="grid-containter">
+            <div class="col-sm-6">
+              <h2 class="player-name" id="name-0">Player 1</h2>
+              <input type="" id="score1" disabled="">
+            </div>
+            <div class="col-sm-6">
+              <h2 class="player-name" id="name-1">Player 2</h2>
+               <input type="" id="score2" disabled="">
+            </div>
+         
+              <button type="button" id="play" onclick="roll()"> ROLL </button>
+              <textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
+           
+              <textarea id="message" disabled="" rows="1" cols="45"> </textarea><br><br>
+               <button type="button" id="play" onclick="passOn()"> Hold </button>
+              <button type="button" id="reset" name="reset" onclick="newGame()"> Reset Game</button>
+              <p id="action"></p>
+              
+            
+        </div>
+      </div>
     
 
     </div>
-    
-	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/script.js"></script>
-</body>
+
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="two.js"></script>
+  
+  </body>
 </html>

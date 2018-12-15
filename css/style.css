@@ -3,10 +3,30 @@ body{
 	background-repeat: none;
 	background-size: 100%;
 }
+.col-sm-6{
+	background-color: ;
+}
 .container{
 	background-color: white;
 	width: 30%;
 	height: 300px;
 	margin-top: 150px;
+	text-align: center;
+}
+.jumbotron{
+	background-color: #004d99;
+}
+h2{
+	margin-right: auto;
+	margin-top: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#main{
+	background-image: url("blue.jpeg")
+}
+textarea{
+	background-color: #d9d9d9;
+	font-weight: 300;
 	text-align: center;
 }
