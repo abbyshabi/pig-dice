@@ -23,7 +23,7 @@ function begin() {
 
 
 $(document).ready(function(){
-    $("#game").hide();
+    $("#game,#maze").hide();
    
    })
    $(document).ready(function(){
@@ -32,7 +32,16 @@ $(document).ready(function(){
         $("#first") . hide();
    })
 })
-
+$(document).ready(function(){
+    $("#game, #maze").hide();
+   
+   })
+   $(document).ready(function(){
+   $("#rules").click(function(){
+     $("#maze").show();
+        $("#first") . hide();
+   })
+})
 
 
 
