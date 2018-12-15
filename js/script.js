@@ -33,7 +33,30 @@ function roll() {
         }
         event.preventDefault();
 }
+function passOn(){
+  if (player == 0){
 
+        scoreOne = scoreOne + score;
+        document.getElementById("score1").value = " " + scoreOne;
+        document.getElementById("message").value = "it's now " + playerNum2 + "'s turn" 
+        //document.getElementById("action").innerHTML = " " + playerNum1;
+            player = 1;
+
+    }
+    
+   else if  (player == 1){
+        number = 0;
+         scoreTwo = scoreTwo + score;   
+        document.getElementById("score2").value = " " + scoreTwo;
+        document.getElementById("message").value = "it's now " + playerNum1 + "'s turn" 
+        //document.getElementById("action").innerHTML = " " + playerNum2;
+            player = 0;
+
+   }
+
+}
+
+}
 
 
 
