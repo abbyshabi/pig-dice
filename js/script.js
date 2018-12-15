@@ -17,6 +17,22 @@ function begin() {
 function dice (){
   number = Math.ceil(Math.random() * 6);
 }
+function roll() {
+   dice();
+        if (number != 1){
+            score = score + number;
+            document.getElementById("result").value = '' + score;
+        }
+
+        else if (number = 1) {
+            score = 0;
+            document.getElementById("message").value = "sorry you rolled a one and lost your turn"
+        }
+        else{
+           score = 0;
+        }
+        event.preventDefault();
+}
 
 
 
