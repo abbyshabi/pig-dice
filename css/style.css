@@ -1,4 +1,4 @@
-body{
+/*body{
 	background-image: url("pig-dice.jpg");
 	background-repeat: none;
 	background-size: 100%;
@@ -14,7 +14,7 @@ body{
 	text-align: center;
 }
 .jumbotron{
-	background-color: #004d99;
+	background-color: black;
 }
 h2{
 	margin-right: auto;
@@ -42,4 +42,82 @@ img{
 	padding-top: 100px;
 
 }
+.col-sm-3{
+	background-color: white;
+}	*/
 
+body{
+	background-image: url("this.jpeg");
+	background-repeat: none;
+	background-size: 100%;
+}
+.col-sm-6{
+	background-color: #004d99 ;
+}
+.container{
+	background-color:white;
+	width: 30%;
+	height: 300px;
+	margin-top: 150px;
+	text-align: center;
+	border: 5px solid #004dBA;
+	border-radius: 12px;
+}
+.jumbotron{
+	background-color:#004d99;
+}
+h1{
+	margin-right: auto;
+	margin-top: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#main{
+	background-image: url("blue.jpeg")
+}
+textarea{
+	background-color: #d9d9d9;
+	font-weight: 300;
+	text-align: center;
+}
+img{
+	width: 30px;
+	height: 30px;
+}
+.grid-container >div{
+	width: 80%;
+	background-color:  #004d99;
+}
+ #action{
+	padding-top: 30px;
+
+}
+.col-sm-3{
+	background-color: white;
+}	
+#back{
+	background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+	font-size: 16px;
+	border-radius: 12px;
+}
+
+
+.button{
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	border-radius: 12px;
+	padding: 15px 10px;
+	font-size: 10px;
+}
+
+.button:hover{
+	background-color: #004d99;
+	color: white;
+  
+}
+.image{
+	width: 100px;
+	height: 100px;
+}

@@ -6,8 +6,21 @@ var playerNum1,
     scoreTwo = 0;
     player = 0;
 
-  
+    //var audio = newSound("images/snort.mp3");
+    function playAudio(snort) {
 
+        var audio = document.createElement("audio");
+        audio.preload = "auto";
+    
+        var src = document.createElement("pig-dice");
+        src.src = snort + ".mp3";
+        audio.appendChild(src);
+    
+        audio.load();
+       // audio.currentTime = 0.01;
+        //audio.volume = 20;
+  
+    }
 
     function begin() {
 
@@ -33,15 +46,7 @@ function dice(){
    number = Math.ceil(Math.random() * 6);
 
    document.getElementById('action').innerHTML = '<img src="images/dice' + number + '.png">';
-
-    /*if(number == 1) document.write('<img src="images/d1.gif">');
-    else if(number == 2)  document.write('<img src="images/d2.gif">');
-    else if(number == 3)  document.write('<img src="images/d3.gif">');
-      else if(number == 4)  document.write('<img src="images/d4.gif">');
-        else if(number == 5)  document.write('<img src="images/d5.gif">');
-  
-                    else   document.write('<img src="images/d6.gif">'); */
-    }
+}
 
 
 function roll() {
@@ -54,7 +59,9 @@ function roll() {
         else if (number = 1) {
 
             score = 0;
-            document.getElementById("message").value = "sorry you rolled a one and lost your turn"
+            document.getElementById("message").value = "oops! you rolled a one! turn lost."
+                playAudio("snort.mp3");
+            //audio.play("images/snort.mp3");
         }
         else{
               document.getElementById("result").innerHTML = " " + score;

@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Pig Dice</title>
+		<title> Pig Dice</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
     <div class="jumbotron">
-      <h1><strong><em> Pig Dice</em></strong></h1>
+			<h1><strong><em> Pig Dice...........</em></strong> 	<img class= "image" src="css/animated.gif"></h1>
     </div>
   </head>
   <body>
     <span id="main">
 	    <div class="container">
 	      <div id="maze">
-	                <h6> 
+	                <h5> 
 	                  On a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during this turn are forfeited.<br> Rolling a 1 doesn't wipe out your entire score from previous turns, just the total earned during that particular roll.<br>
 
 	                  A player can also choose to hold (stop rolling the die) if they do not want to take a chance of rolling a 1 and losing all of their points from this turn. <br>If the player chooses to hold, all of the points rolled during that turn are added to his or her score.<br>
 
 	                  When a player reaches a total of 100 or more points, the game ends and that player is the winner.
-	                                  </h6>
+	                                  </h5>
 	                <button type="button" id="back"> Back to Game</button>
 	     </div>
 
 		       <div id = "first" >
-		          <h2><strong> welcome to the Pig dice game</strong></h2>
+		          <h1><strong> Welcome to the Pig dice game</strong></h1>
 		          <h3><em> Don't be a greedy little pig......</em></h3>
-		          <button type="button" id="next" name="play" onclick="begin()"> Play Game! </button>
-		          <button type ="button" id="rules" onclick="rule()"> How to play</button>
+		          <button type="button" class="button" id="next" name="play" onclick="begin()"> Play Game! </button>
+		          <button type ="button" class="button" id="rules" onclick="rule()"> How to play</button>
     </span>
 		      </div>
 		      <form id = "play">
 		      <div id="game">
 		        <div class="grid-containter">
-			            <div class="col-sm-5">
+			            <div class="col-sm-4">
 				              <h2 class="player-name" id="name-0">Player 1</h2>
 				              <input type="" id="score1" disabled="">
 									</div>
-									<div class="col-sm-2">
-										<p id="action"></p>
+									<div class="col-sm-3">
+											<output id="message" disabled="" rows="1" cols="45"></output><br><br>
+										<p id="action"><em></em></p>
+										<button type="button" class="button" id="play" onclick="roll()"> ROLL </button>
+			              <textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
+			              <button type="button" class="button" id="play" onclick="passOn()"> Hold </button>
+			          </form>
+	 		              <button type="reset" class="button" > Reset Game</button>
 									</div>
 			            <div class="col-sm-5">
 				              <h2 class="player-name" id="name-1">Player 2</h2>
@@ -46,13 +54,7 @@
 									</div>
 						
 		         
-			              <button type="button" id="play" onclick="roll()"> ROLL </button>
-			              <textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
-				          <textarea id="message" disabled="" rows="1" cols="45"> </textarea><br><br>
-
-			              <button type="button" id="play" onclick="passOn()"> Hold </button>
-			          </form>
-	 		              <button type="reset" > Reset Game</button>
+			             
 		              		
 		        </div>
      	     </div>
