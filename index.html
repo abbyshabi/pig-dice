@@ -33,23 +33,27 @@
 		      <form id = "play">
 		      <div id="game">
 		        <div class="grid-containter">
-			            <div class="col-sm-6">
+			            <div class="col-sm-5">
 				              <h2 class="player-name" id="name-0">Player 1</h2>
 				              <input type="" id="score1" disabled="">
-			            </div>
-			            <div class="col-sm-6">
+									</div>
+									<div class="col-sm-2">
+										<p id="action"></p>
+									</div>
+			            <div class="col-sm-5">
 				              <h2 class="player-name" id="name-1">Player 2</h2>
 				              <input type="" id="score2" disabled="">
-			            </div>
+									</div>
+						
 		         
 			              <button type="button" id="play" onclick="roll()"> ROLL </button>
 			              <textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
 				          <textarea id="message" disabled="" rows="1" cols="45"> </textarea><br><br>
-  							<img src="http://javascriptkit.com/complete/images/d2.gif" name="mydice">
+
 			              <button type="button" id="play" onclick="passOn()"> Hold </button>
 			          </form>
 	 		              <button type="reset" > Reset Game</button>
-		              			<p id="action"></p>
+		              		
 		        </div>
      	     </div>
 

@@ -4,7 +4,7 @@ body{
 	background-size: 100%;
 }
 .col-sm-6{
-	background-color: ;
+	background-color: #004d99 ;
 }
 .container{
 	background-color: white;
@@ -30,3 +30,16 @@ textarea{
 	font-weight: 300;
 	text-align: center;
 }
+img{
+	width: 30px;
+	height: 30px;
+}
+.grid-container >div{
+	width: 80%;
+	background-color:  #004d99;
+}
+ #action{
+	padding-top: 100px;
+
+}
+

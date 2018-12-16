@@ -6,24 +6,10 @@ var playerNum1,
     scoreTwo = 0;
     player = 0;
 
-  var face1=new Image()
-  face1.src="d1.gif"
-  var face2=new Image()
-  face2.src="d2.gif"
-  var face3=new Image()
-  face3.src="d3.gif"
-  var face4=new Image()
-  face4.src="d4.gif"
-  var face5=new Image()
-  face5.src="d5.gif"
-  var face6=new Image()
-  face6.src="d6.gif"
+  
 
 
-
-    
-
-function begin() {
+    function begin() {
 
     playerNum1 = prompt("Player One, Enter Your Name:");
     playerNum2 = prompt("Player Two, Enter Your Name:");
@@ -36,24 +22,30 @@ function begin() {
         document.getElementById("name-0").innerHTML = " " + playerNum1;
         document.getElementById("name-1").innerHTML = " " + playerNum2;
         //document.getElementById("action").innerHTML = " " + playerNum1;
-        document.getElementById("score1").innerHTML = " " + playerOneScore;
-        document.getElementById("score2").innerHTML = " " + playerTwoScore;
+        document.getElementById("score1").innerHTML = " " + scoreOne;
+        document.getElementById("score2").innerHTML = " " + scoreOne;
     }
 
 }
 function dice(){
  
   
-    number = Math.ceil(Math.random() * 6);
+   number = Math.ceil(Math.random() * 6);
 
-     document.images["mydice"].src=eval("face"+ number +".src") 
+   document.getElementById('action').innerHTML = '<img src="images/dice' + number + '.png">';
+
+    /*if(number == 1) document.write('<img src="images/d1.gif">');
+    else if(number == 2)  document.write('<img src="images/d2.gif">');
+    else if(number == 3)  document.write('<img src="images/d3.gif">');
+      else if(number == 4)  document.write('<img src="images/d4.gif">');
+        else if(number == 5)  document.write('<img src="images/d5.gif">');
+  
+                    else   document.write('<img src="images/d6.gif">'); */
     }
 
 
 function roll() {
-    
-        
-        dice();
+    dice();
         if (number != 1){
             score = score + number;
             document.getElementById("result").value = '' + score;
@@ -77,8 +69,8 @@ function passOn(){
 
         scoreOne = scoreOne + score;
         document.getElementById("score1").value = " " + scoreOne;
-        alert(" it's now " + playerNum2 + "'s turn")
-        //document.getElementById("message").value = "it's now " + playerNum2 + "'s turn" 
+        //alert(" it's now " + playerNum2 + "'s turn")
+        document.getElementById("message").value = "it's now " + playerNum2 + "'s turn" 
       
             player = 1;
             if (scoreOne >= 100){
@@ -93,8 +85,8 @@ function passOn(){
        
          scoreTwo = scoreTwo + score;   
         document.getElementById("score2").value = " " + scoreTwo;
-        alert(" it's now " + playerNum1 + "'s turn")
-        //document.getElementById("message").value = "it's now " + playerNum1 + "'s turn" 
+        //alert(" it's now " + playerNum1 + "'s turn")
+        document.getElementById("message").value = "it's now " + playerNum1 + "'s turn" 
        
             player = 0;
             if (scoreTwo >= 100){
@@ -137,7 +129,7 @@ $(document).ready(function(){
 })
    $(document).ready(function(){
    $(":reset").click(function(){
-            
-     })
+       document.location.reload(true);     
+     });
  })
 
