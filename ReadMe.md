@@ -8,7 +8,7 @@ roll as much as the want but once they roll 1, all accumulated points = 0.
 * Access github on a web browser
 * clone this repository  from https://github.com/abbyshabi/pig-dice
 ## Behaviour Driven Development
-##|Behaviour| Input | Output|
+|Behaviour| Input | Output|
 |---------|-------|-------|
 |Players click on play game button | click Play Game! button | player 1 enter your name/player 2 enter your name.       
 |Player 1 inputs name/ player 2 inputs name and clicks ok| player 1 :dammy / player 2: abby/ click ok| opens game.
