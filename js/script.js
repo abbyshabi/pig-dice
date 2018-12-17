@@ -62,6 +62,7 @@ function roll() {
             document.getElementById("message").value = "oops! you rolled a one! turn lost."
                 playAudio("snort.mp3");
             //audio.play("images/snort.mp3");
+            player = 1;
         }
         else{
               document.getElementById("result").innerHTML = " " + score;
