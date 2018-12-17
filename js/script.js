@@ -34,7 +34,6 @@ var playerNum1,
     } else {
         document.getElementById("name-0").innerHTML = " " + playerNum1;
         document.getElementById("name-1").innerHTML = " " + playerNum2;
-        //document.getElementById("action").innerHTML = " " + playerNum1;
         document.getElementById("score1").innerHTML = " " + scoreOne;
         document.getElementById("score2").innerHTML = " " + scoreOne;
     }

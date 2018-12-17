@@ -8,11 +8,16 @@ roll as much as the want but once they roll 1, all accumulated points = 0.
 * Access github on a web browser
 * clone this repository  from https://github.com/abbyshabi/pig-dice
 ## Behaviour Driven Development
-* A system that determines the type of triangles
-* When user inputs 3 equal values(e.g 3,3,3) , the Triangle is an Equilateral Triangle
-* When user inputs 2 equal values(e.g 3,3,2) , the Triangle is an Isoceles Triangle
-* When user inputs 3 different values (e.g 3,2,4) , the Triangle is a Scalene Triangle
-* When user inputs 3 different values a,b,c and (a+b <= c), the system outputs it is not a triangle.
+##|Behaviour| Input | Output|
+|---------|-------|-------|
+|Players click on play game button | click Play Game! button | player 1 enter your name/player 2 enter your name.       
+|Player 1 inputs name/ player 2 inputs name and clicks ok| player 1 :dammy / player 2: abby/ click ok| opens game.
+|Player 1 clicks Roll button| click ROLL | Die generates random number.
+|If number rolled is not 1,player 1 can roll again and score is accumulated| Click ROLL/ ROLL = 5 | score = 5.
+|Player 1 clicks roll button again | ROLL = 1 | oops! you rolled 1 and lost a turn/ it's player 2 's turn.
+|Player 2 repeats process | clicks ROLL | Die generates random number.
+| If player 1 score = 100 | Player 1 score = 100 | Player 1 wins with "score".
+|Players click on reset | click RESET | Returns back to game home page.
 ## Live Demo
  Here is a link to a live demo : https://abbyshabi.github.io/pig-dice/
 ## Known Bugs

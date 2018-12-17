@@ -359,7 +359,7 @@ template {
   display: none !important;
 }
 
-h2, h3, h4, h5, h6,
+h2, h3, h4, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
@@ -381,7 +381,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 h5, .h5 {

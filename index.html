@@ -15,13 +15,13 @@
     <span id="main">
 	    <div class="container">
 	      <div id="maze">
-	                <h5> 
+	                <h4> 
 	                  On a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during this turn are forfeited.<br> Rolling a 1 doesn't wipe out your entire score from previous turns, just the total earned during that particular roll.<br>
 
 	                  A player can also choose to hold (stop rolling the die) if they do not want to take a chance of rolling a 1 and losing all of their points from this turn. <br>If the player chooses to hold, all of the points rolled during that turn are added to his or her score.<br>
 
 	                  When a player reaches a total of 100 or more points, the game ends and that player is the winner.
-	                                  </h5>
+	                                  </h4>
 	                <button type="button" id="back"> Back to Game</button>
 	     </div>
 
@@ -37,10 +37,10 @@
 		        <div class="grid-containter">
 			            <div class="col-sm-4">
 				              <h2 class="player-name" id="name-0">Player 1</h2>
-				              <input type="" id="score1" disabled="">
+				              <h5> Player 1 score : <input type="" id="score1" disabled=""></h5>
 									</div>
 									<div class="col-sm-3">
-											<output id="message" disabled="" rows="1" cols="45"></output><br><br>
+											<h5> <output id="message" disabled="" rows="1" cols="45"></output><br><br></h5>
 										<p id="action"><em></em></p>
 										<button type="button" class="button" id="play" onclick="roll()"> ROLL </button>
 			              <textarea id="result" disabled="" rows="1" cols="2"></textarea><br><br>
@@ -50,7 +50,7 @@
 									</div>
 			            <div class="col-sm-5">
 				              <h2 class="player-name" id="name-1">Player 2</h2>
-				              <input type="" id="score2" disabled="">
+				              <h5> Player 2 score : <input type="" id="score2" disabled=""></h5>
 									</div>
 						
 		         
